@@ -1,4 +1,8 @@
-a, b, c = map(int, input(' 숫자 세개를 입력하세요.>').split())
+# a, b, c = map(int, input(' 숫자 세개를 입력하세요.>').split())
 
-print('세개의 숫자:', a, b, c)
-print('합계 : ', a+b+c)
+# print('세개의 숫자:', a, b, c)
+# print('합계 : ', a+b+c)
+
+
+a,b,c,d = map(int, input().split())
+print((a+b+c+d)//4)
