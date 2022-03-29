@@ -14006,8 +14006,6 @@ a.anchor-link {
     <span class="k">if</span> <span class="n">word</span> <span class="o">==</span> <span class="s1">&#39;the&#39;</span><span class="p">:</span>
         <span class="n">count_the</span> <span class="o">+=</span><span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">count_the</span><span class="p">)</span>
-
-    
 </pre></div>
 
      </div>
@@ -14027,7 +14025,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;the&#39;, &#34;grown-ups&#39;&#34;, &#39;response,&#39;, &#39;this&#39;, &#39;time,&#39;, &#39;was&#39;, &#39;to&#39;, &#39;advise&#39;, &#39;me&#39;, &#39;to&#39;, &#39;lay&#39;, &#39;aside&#39;, &#39;my&#39;, &#39;drawings&#39;, &#39;of&#39;, &#39;boa&#39;, &#39;constrictors,&#39;, &#39;whether&#39;, &#39;from&#39;, &#39;the&#39;, &#39;inside&#39;, &#39;or&#39;, &#39;the&#39;, &#39;outside,&#39;, &#39;and&#39;, &#39;devote&#39;, &#39;myself&#39;, &#39;instead&#39;, &#39;to&#39;, &#39;geography,&#39;, &#39;history,&#39;, &#39;arithmetic,&#39;, &#39;and&#39;, &#39;grammar.&#39;, &#39;That&#39;, &#39;is&#39;, &#39;why,&#39;, &#39;at&#39;, &#39;the,&#39;, &#39;age&#39;, &#39;of&#39;, &#39;six,&#39;, &#39;I&#39;, &#39;gave&#39;, &#39;up&#39;, &#39;what&#39;, &#39;might&#39;, &#39;have&#39;, &#39;been&#39;, &#39;a&#39;, &#39;magnificent&#39;, &#39;career&#39;, &#39;as&#39;, &#39;a&#39;, &#39;painter.&#39;, &#39;I&#39;, &#39;had&#39;, &#39;been&#39;, &#39;disheartened&#39;, &#39;by&#39;, &#39;the&#39;, &#39;failure&#39;, &#39;of&#39;, &#39;my&#39;, &#39;Drawing&#39;, &#39;Number&#39;, &#39;One&#39;, &#39;and&#39;, &#39;my&#39;, &#39;Drawing&#39;, &#39;Number&#39;, &#39;Two.&#39;, &#39;Grown-ups&#39;, &#39;never&#39;, &#39;understand&#39;, &#39;anything&#39;, &#39;by&#39;, &#39;themselves,&#39;, &#39;and&#39;, &#39;it&#39;, &#39;is&#39;, &#39;tiresome&#39;, &#39;for&#39;, &#39;children&#39;, &#39;to&#39;, &#39;be&#39;, &#39;always&#39;, &#39;and&#39;, &#39;forever&#39;, &#39;explaining&#39;, &#39;things&#39;, &#39;to&#39;, &#39;the.&#39;]
+<pre>6
 </pre>
 </div>
 </div>
@@ -14141,12 +14139,8 @@ alpha bravo charlie delta echo foxtrot golf
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">keys</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
 <span class="n">values</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
 <span class="n">x</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
-<span class="k">del</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">]</span>
 
-<span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">30</span><span class="p">:</span>
-        <span class="k">del</span> <span class="n">l</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="k">del</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="mi">30</span><span class="p">:</span>
