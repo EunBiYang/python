@@ -72,25 +72,27 @@ def withdraw_account():
             acc.withdraw(amount)
             return
 
-while True:
-    try:
-        menu = int(input('1:계좌생성, 2:계좌목록, 3:입금, 4:출금, 5:종료> '))
-    except:
-        print('잘못된 명령어입니다.\n')   #이상한 값을 넣어도 프로그램이 죽지 않고 계속된다.
-        continue
 
-    if menu == 5:
-        break
-    if menu == 1:
-        create_account()
-    elif menu == 2:
-        for account in acc_list:
-            print(account)
-    elif menu == 3:
-        deposit_account()
-    elif menu == 4:
-        withdraw_account()
-    else:
-        print('잘못된 명령어입니다.')
+if __name__ == '__main__':
+    while True:
+        try:
+            menu = int(input('1:계좌생성, 2:계좌목록, 3:입금, 4:출금, 5:종료> '))
+        except:
+            print('잘못된 명령어입니다.\n')   #이상한 값을 넣어도 프로그램이 죽지 않고 계속된다.
+            continue
 
-    print()
+        if menu == 5:
+            break
+        if menu == 1:
+            create_account()
+        elif menu == 2:
+            for account in acc_list:
+                print(account)
+        elif menu == 3:
+            deposit_account()
+        elif menu == 4:
+            withdraw_account()
+        else:
+            print('잘못된 명령어입니다.')
+
+        print()
